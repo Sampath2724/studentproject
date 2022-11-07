@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Student Automation">
+	<parameter name="email" value="sampath.fer@gmail.com" />
+	<parameter name="password" value="14111984" />
+	<parameter name="firstName" value="Sampath" />
+	<parameter name="lastName" value="M" />
+	<parameter name="email1" value="sampath.fer@gmail" />
+	<parameter name="password1" value="sam" />
+	<parameter name="firstName1" value="" />
+	<parameter name="lastName1" value="" />
+	<test thread-count="5" name="SignUp">
+		<classes>
+			<!-- <class name="com.student.tests.SignupTest" />
+			<class name="com.student.tests.SignupInvalidTest" />-->
+		</classes>
+	</test> <!-- TestNG -->
+	<test thread-count="5" name="Login and Logout">
+		<classes>
+			<!-- <class name="com.student.tests.LoginTest" />-->
+			<class name="com.student.tests.LoginInvalidTest" />
+		<!-- 	<class name="com.student.tests.LogoutTest" />-->
+		</classes>
+	</test>
+	<test thread-count="5" name="Book a Room">
+		<classes>
+		<!-- 	<class name="com.student.tests.SelectRoomTest" />-->
+		</classes>
+	</test>
+
+</suite> <!-- Student Automation -->
